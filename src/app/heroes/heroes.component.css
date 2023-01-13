@@ -1,8 +1,77 @@
 .heroes {
-  cursor: pointer;
+  /* cursor: pointer;
+  margin: 10px; */
+}
+/*
+.heroes li {
+  list-style: none;
+  text-decoration: none;
+  margin: 5px;
+} */
+
+.heroes li {
+  position: relative;
+  padding: 16px 30px;
+  font-size: 1.5em;
+  color: var(--clr);
+  text-shadow: 0 0 15px var(--clr);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: 0.5s;
+  border: 2px solid rgba(0,0,0,0.5);
+}
+.heroes li:hover {
+  color: #fff;
+  border:  2px solid rgba(0,0,0,0);
+  text-shadow:  0 0 0px var(--clr);
+}
+.heroes li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr);
+  z-index: -1;
+  transform: scale(0);
 }
 
+.heroes li:hover::before {
+  transition: scale(1);
+  transition-delay: 0.5s;
+  box-shadow: 0 0 10px var(--clr),
+  0 0 30px var(--clr),
+  0 0 60px var(--clr);
+}
+
+.heroes a span {
+  position: absolute;
+  background: var(--clr);
+  pointer-events: none;
+  box-shadow: 0 0 10px var(--clr),
+  0 0 20px var(--clr),
+  0 0 30px var(--clr),
+  0 0 50px var(--clr),
+  0 0 100px var(--clr);
+}
+
+.heroes a span:nth-child(1),
+.heroes a span:nth-child(3) {
+  width: 40px;
+  height: 4px;
+}
+
+.heroes a span:nth-child(2),
+.heroes a span:nth-child(4) {
+  width: 40px;
+  height: 4px;
+}
+
+
+
 .heroes li.selected {
-  background-color: black;
-  color: white;
+  /* background-color: rgba(255, 255, 255, 0);
+  color: rgb(0, 119, 255); */
 }

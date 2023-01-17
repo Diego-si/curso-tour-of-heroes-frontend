@@ -2,15 +2,16 @@
 
 <ul class="heroes">
   <a href="#" style="--clr: #1e9bff">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+
     <li
       *ngFor="let hero of heroes"
       [class.selected]="hero === selectedHero"
       (click)="onSelect(hero)"
     >
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
       {{ hero.name }}
     </li>
   </a>

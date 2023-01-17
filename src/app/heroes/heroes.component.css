@@ -10,6 +10,7 @@
 } */
 
 .heroes li {
+  background: #27282c;
   position: relative;
   padding: 16px 30px;
   font-size: 1.5em;
@@ -36,6 +37,7 @@
   background: var(--clr);
   z-index: -1;
   transform: scale(0);
+  transition: 0.5s;
 }
 
 .heroes li:hover::before {
@@ -63,13 +65,71 @@
   height: 4px;
 }
 
-.heroes a span:nth-child(2),
+/* .heroes a span:nth-child(2),
 .heroes a span:nth-child(4) {
-  width: 40px;
-  height: 4px;
+  width: 4px;
+  height: 40px;
+} */
+
+.heroes a span:nth-child(1) {
+  top: calc(50% - 2px);
+  left: -30%;
+  transform-origin: left;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.25s;
 }
 
+.heroes a:hover span:nth-child(1) {
+  left: 30%;
+  transition: scaleX(0);
+  opacity: 0;
+  transition-delay: 0s;
+}
 
+.heroes a span:nth-child(3) {
+  top: calc(50% - 2px);
+  right: -30%;
+  transform-origin: right;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.heroes a:hover span:nth-child(3) {
+  right: 30%;
+  transition: scaleX(0);
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+/* .heroes a span:nth-child(2) {
+  left: calc(50% - 2px);
+  top: -30%;
+  transform-origin: top;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.heroes a:hover span:nth-child(2) {
+  top: 30%;
+  transition: scaleY(0);
+  opacity: 0;
+  transition-delay: 0s;
+} */
+
+/* .heroes a span:nth-child(4) {
+  left: calc(50% - 2px);
+  bottom: -30%;
+  transform-origin: bottom;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.heroes a:hover span:nth-child(4) {
+  bottom: 30%;
+  transition: scaleY(0);
+  opacity: 0;
+  transition-delay: 0s;
+} */
 
 .heroes li.selected {
   /* background-color: rgba(255, 255, 255, 0);

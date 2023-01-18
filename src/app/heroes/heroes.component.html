@@ -3,20 +3,11 @@
 </div>
 
 <ul class="heroes">
-  <a href="#" style="--clr: #1e9bff">
-
     <li
+      style="--clr: #1e9bff"
       *ngFor="let hero of heroes"
-      [class.selected]="hero === selectedHero"
-      (click)="onSelect(hero)"
+      routerLink="/heroes/{{hero.id}}"
     >
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      {{ hero.name }}
+      <span>{{ hero.id }}</span> {{ hero.name }}
     </li>
-  </a>
 </ul>
-
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>

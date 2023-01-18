@@ -5,6 +5,7 @@
   color: #fff;
   margin: 1px;
   column-count: 3;
+  cursor: pointer;
 }
 
 .actions mat-card-title{

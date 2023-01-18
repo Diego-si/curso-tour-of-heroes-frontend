@@ -1,0 +1,16 @@
+.actions{
+  display: inline-block;
+  padding: 5px;
+  background-color: rgb(41, 41, 41);
+  color: #fff;
+  margin: 1px;
+  column-count: 3;
+}
+
+.actions mat-card-title{
+  display: flex;
+  text-align: center;
+  font-size: 1.5em;
+  list-style-type: none;
+  width: 80px;
+}

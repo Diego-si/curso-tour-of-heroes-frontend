@@ -1,10 +1,27 @@
 <mat-toolbar class="primary">
   <mat-toolbar-row>
     <span>{{ title }}</span>
+    <span class="example-spacer"></span>
+    <button
+      mat-icon-button
+      matTooltip="Dashboard"
+      aria-label="Dashboard"
+      routerLink="/dashboard"
+    >
+      <mat-icon>dashboard</mat-icon>
+    </button>
+    <button
+      mat-icon-button
+      matTooltip="Heroes"
+      aria-label="Lista de Heroes"
+      routerLink="/heroes"
+    >
+      <mat-icon>sports_material_arts</mat-icon>
+    </button>
   </mat-toolbar-row>
 </mat-toolbar>
 
 <div class="content">
-  <app-heroes></app-heroes>
+  <router-outlet></router-outlet>
   <app-messages></app-messages>
 </div>

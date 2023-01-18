@@ -5,11 +5,10 @@
 
 .painel button  {
   background: #27282c;
-  position: relative;
-  padding: 16px 30px;
-  font-size: 1.5em;
+  font-size: 100%;
   letter-spacing: 0.1em;
   transition: 0.5s;
+  margin: 10px;
   border: 2px solid rgba(0,0,0,0.5);
 }
 .painel button:hover {

@@ -1,7 +1,12 @@
 <h2>Painel</h2>
 
 <div>
-  <mat-card *ngFor="let hero of heroes" routerLink="/heroes/{{hero.id}}" class="actions">
+  <mat-card
+    class="pointer"
+    *ngFor="let hero of heroes"
+    [routerLink]="['/heroes/', hero.id ]"
+    class="actions"
+  >
     <mat-card-title>{{ hero.name }}</mat-card-title>
   </mat-card>
 </div>

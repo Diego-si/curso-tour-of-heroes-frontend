@@ -1,9 +1,9 @@
 .actions{
   display: inline-block;
   padding: 5px;
-  background-color: rgb(41, 41, 41);
-  color: #fff;
-  margin: 1px;
+  background-color: #bcbcbc;
+  color: rgb(62, 62, 62);
+  margin: 5px;
   column-count: 3;
   cursor: pointer;
 }

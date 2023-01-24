@@ -1,17 +1,31 @@
-.hero h1 {
-  margin: 10px;
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
 }
 
-.hero button  {
-  background: #27282c;
-  font-size: 100%;
-  letter-spacing: 0.1em;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid rgba(0,0,0,0.5);
-  color:  #1e9bff;
+.example-full-width {
+  width: 100%;
 }
-.hero button:hover {
-  color: #fff;
-  border:  2px solid rgba(0,0,0,0);
+
+.example-form-field {
+  width: 200px;
 }
+
+// .hero h1 {
+//   margin: 10px;
+// }
+
+// .hero button  {
+//   background: #27282c;
+//   font-size: 100%;
+//   letter-spacing: 0.1em;
+//   transition: 0.5s;
+//   margin: 10px;
+//   border: 2px solid rgba(0,0,0,0.5);
+//   color:  #1e9bff;
+// }
+// .hero button:hover {
+//   color: #fff;
+//   border:  2px solid rgba(0,0,0,0);
+// }
